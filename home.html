@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/global.css" />
+
+    <title>Amr Khaled</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <span class="logo">Amr</span>
+      <ul class="linksList">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+    <div id="swup" class="transition-fade">
+      <main class="home">
+        <h1 class="homeHeader">
+          I am Amr Khaled a skilled web developer and UI/UX Designer with a
+          passion for crafting outstanding websites
+        </h1>
+      </main>
+      <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill-item" data-tilt data-tilt-scale="1.1">
+            <div class="icon-header">
+              <img src="/assets/uiux.svg" alt="html" />
+              <h4 class="colored-uiux">UI/UX</h4>
+            </div>
+            <p class="p1 skillp">
+              Designing intuitive user experiences and stunning user interfaces
+            </p>
+            <p class="lightp">Used Tech: Figma, AdobeXD</p>
+          </div>
+          <div class="skill-item" data-tilt data-tilt-scale="1.1">
+            <div class="icon-header">
+              <img src="/assets/code.svg" alt="html" />
+              <h4 class="colored-web">Web Development</h4>
+            </div>
+            <p class="p1 skillp">
+              Transforming designs into clean code that works with all browsers
+            </p>
+            <p class="lightp">
+              Used Tech: HTML, Css, React, vue, Nodejs, Express.js, and more
+            </p>
+          </div>
+          <div class="skill-item" data-tilt data-tilt-scale="1.1">
+            <div class="icon-header">
+              <img src="/assets/ai.svg" alt="html" />
+              <h4 class="colored-ai">AI Tools</h4>
+            </div>
+            <p class="p1 skillp">
+              I can use moderns ai tools to help in the creation of your website
+            </p>
+            <p class="lightp">Used Tech: ChatGPT, Bard</p>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <img src="/assets/movies.jpg" alt="movies" class="project-img" />
+            <div class="project-info">
+              <h3 class="project-title">Movies And Series Gallary</h3>
+              <div>
+                <p class="project-description p1">
+                  A website that shows the latest movies and tv shows
+                </p>
+                <a class="project-link p2" href="/movies.html">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img src="/assets/ecommerce.png" alt="movies" class="project-img" />
+            <div class="project-info">
+              <h3 class="project-title">Ecommerce Website</h3>
+              <div>
+                <p class="project-description p1">
+                  A website that you can buy clothes from
+                </p>
+                <a class="project-link p2" href="/e-commerce.html">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"
+    ></script>
+    <script defer src="/vanilla-tilt.min.js"></script>
+    <script defer src="https://unpkg.com/swup@3"></script>
+    <script defer src="/index.js"></script>
+  </body>
+</html>
