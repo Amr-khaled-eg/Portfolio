@@ -18,8 +18,8 @@
       <span class="logo">Amr</span>
       <ul class="linksList">
         <li><a href="/home.html">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#skills" onclick="scroll">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </nav>
     <div id="swup" class="transition-fade">
@@ -31,7 +31,7 @@
       </main>
       <section class="skills">
         <h2>Skills</h2>
-        <div class="skills-container">
+        <div class="skills-container" id="skills">
           <div class="skill-item" data-tilt data-tilt-scale="1.1">
             <div class="icon-header">
               <img src="/assets/uiux.svg" alt="html" />
@@ -66,11 +66,13 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="projects-container">
           <div class="project">
-            <img src="/assets/movies.jpg" alt="movies" class="project-img" />
+            <a href="/movies.html" class="project-img-link">
+              <img src="/assets/movies.jpg" alt="movies" class="project-img" />
+            </a>
             <div class="project-info">
               <h3 class="project-title">Movies And Series Gallary</h3>
               <div>
@@ -82,7 +84,13 @@
             </div>
           </div>
           <div class="project">
-            <img src="/assets/ecommerce.png" alt="movies" class="project-img" />
+            <a href="/e-commerce.html" class="project-img-link">
+              <img
+                src="/assets/ecommerce.png"
+                alt="movies"
+                class="project-img"
+              />
+            </a>
             <div class="project-info">
               <h3 class="project-title">Ecommerce Website</h3>
               <div>
@@ -96,11 +104,26 @@
         </div>
       </section>
     </div>
-
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"
-    ></script>
+    <footer>
+      <p class="footer-text">Made with ❤️ by Amr Khaled</p>
+      <div class="footer-icons">
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/in/amr-khaled-74b289281"
+          target="_blank"
+        >
+          <img src="/assets/linkedIn.svg" />
+        </a>
+        <a
+          class="footer-link"
+          href="https://www.upwork.com/freelancers/~014bf5e9b7eb9c9baf"
+          target="_blank"
+        >
+          <img src="/assets/upwork.svg" />
+        </a>
+      </div>
+    </footer>
+    <script defer src="/lenis.min.js"></script>
     <script defer src="/vanilla-tilt.min.js"></script>
     <script defer src="https://unpkg.com/swup@3"></script>
     <script defer src="/index.js"></script>
