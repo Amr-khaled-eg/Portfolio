@@ -24,7 +24,6 @@ const scrollToSection = (section) => {
   });
 };
 document.querySelectorAll(".linksList a").forEach((link) => {
-  console.log(link.getAttribute("href"));
   link.addEventListener("click", function (e) {
     scrollToSection(link.getAttribute("href"));
   });
