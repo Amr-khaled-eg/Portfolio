@@ -10,34 +10,49 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/global.css" />
-
     <title>E-commerce Project</title>
   </head>
   <body>
-    <nav class="navigation">
-      <span class="logo">Amr</span>
-      <ul class="linksList">
-        <li><a href="/home.html">Home</a></li>
-        <li><a href="/home.html#skills">Skills</a></li>
-        <li><a href="/home.html#projects">Projects</a></li>
-      </ul>
-    </nav>
-    <div class="project-content transition-fade transition-e" id="swup">
-      <h1 class="project-name">E-Commerce App</h1>
-      <h3 class="section-title">Login Page</h3>
-      <img src="/assets/ec/login.png" alt="login page" class="section-img" />
-      <h3 class="section-title">Home Page</h3>
-   
-      <img
-        src="/assets/ec/categories.png"
-        alt="categories page"
-        class="section-img"
-      />
+    <div class="transition-fade transition-e" id="swup">
+      <nav class="navigation">
+        <span class="logo">Amr</span>
+        <div class="back-container">
+          <a href="/home.html" class="back-link darker">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="26"
+              viewBox="0 0 26 44"
+              fill="none"
+            >
+              <path
+                d="M22.5 3.5L3.5 22L22.5 40.5"
+                stroke="black"
+                stroke-width="7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <h3 class="project-name">E-Commerce App</h3>
+        </div>
+      </nav>
+      <div class="project-content">
+        <h3 class="section-title">Login Page</h3>
+        <img src="/assets/ec/login.png" alt="login page" class="section-img" />
+        <h3 class="section-title">Home Page</h3>
 
-      <h3 class="section-title">Items Page</h3>
-      <img src="/assets/ec/items.png" alt="items page" class="section-img" />
-      <h3 class="section-title">Item Page</h3>
-      <img src="/assets/ec/item.png" alt="item page" class="section-img" />
+        <img
+          src="/assets/ec/categories.png"
+          alt="categories page"
+          class="section-img"
+        />
+
+        <h3 class="section-title">Items Page</h3>
+        <img src="/assets/ec/items.png" alt="items page" class="section-img" />
+        <h3 class="section-title">Item Page</h3>
+        <img src="/assets/ec/item.png" alt="item page" class="section-img" />
+      </div>
     </div>
     <footer>
       <p class="footer-text">Made with ❤️ by Amr Khaled</p>
@@ -62,7 +77,5 @@
     <script defer src="/vanilla-tilt.min.js"></script>
     <script defer src="https://unpkg.com/swup@3"></script>
     <script defer src="/index.js"></script>
-  </body>
-</html>
   </body>
 </html>

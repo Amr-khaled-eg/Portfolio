@@ -81,7 +81,7 @@ p {
   margin-bottom: 4rem;
 }
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 3px;
 }
@@ -89,8 +89,28 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  width: 200px;
   list-style-type: none;
+}
+.back-link {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 56px;
+  background: rgba(255, 255, 255, 0.05);
+  margin-right: 1rem;
+}
+.darker {
+  background: rgba(255, 255, 255, 0.349);
+}
+.back-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .transition-fade {
   opacity: 1;
@@ -221,15 +241,32 @@ html.is-animating body:has(.transition-movies) {
   align-items: center;
   max-width: 1024px;
   margin: auto;
+  padding-top: 8rem;
 }
 .project-name {
-  padding-top: 4rem;
-  text-align: center;
-  margin-bottom: 9rem;
+  font-size: 1.75rem;
+}
+.project-btn {
+  display: flex;
+  width: 155px;
+  padding: 5px 17px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  border: 1px solid #998c8c;
+  background: transparent;
+  margin-bottom: 2rem;
 }
 .section-title {
   align-self: flex-start;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .section-img {
   margin-bottom: 6rem;
@@ -282,6 +319,9 @@ footer {
   .project-info {
     width: 100%;
   }
+  .project-content {
+    padding-top: 5rem;
+  }
   .project-img-link {
     width: 100%;
     max-width: 800px;
@@ -314,6 +354,12 @@ footer {
   }
   .linksList {
     display: none;
+  }
+  .project-name {
+    display: none;
+  }
+  .project-content {
+    padding-top: 3rem;
   }
   h1 {
     font-size: 2.1rem;
